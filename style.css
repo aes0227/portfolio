@@ -84,7 +84,7 @@ input, select, textarea {
 .navbar{
     background-color: #919FB4;
     margin-bottom: 0.25em;
-    max-height: 100px;
+    height:auto;
     padding-right: 2.5em;
 }
 
