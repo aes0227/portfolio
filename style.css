@@ -10,9 +10,7 @@
 	width: device-width;
 }
 
-body {
-	-ms-overflow-style: scrollbar;
-}
+
 
 @media screen and (max-width: 480px) {
 
@@ -91,7 +89,7 @@ input, select, textarea {
 }
 
 .navbar-nav {
-	display: inline-block;
+	display: flex;
 }
 
 .collapse navbar-collapse {}
@@ -247,12 +245,12 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 3.4em;
 		font-weight: 400;
 		line-height: 0;
 		margin: 1em 1em 1em 0;
 		letter-spacing: -0.035em;
-        color: #BCC5D1;
+        color: #fffdcb;
         text-align: right;
         font-family: Newsreader;
 	}
@@ -291,8 +289,8 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
-        color: #BCC5D1;
+		font-size: 1.3em;
+        color: #fffdcb;
         text-align: right;
         margin: 0 2em 1em 0;
         font-family: Nunito+Sans;
@@ -346,7 +344,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
-		padding-bottom: 2em;
+		padding-bottom: 3em;
 	}
 		.row > * {
 			box-sizing: border-box;
@@ -2723,7 +2721,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 2em 0 0 0 ;
 		background-color: #f6f6f6;
 	}
 
@@ -2748,12 +2746,12 @@ input, select, textarea {
 
 			#footer > .inner section:nth-child(1) {
 				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
+				margin-right: 2em;
 			}
 
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
-				margin-left: 2.5em;
+				margin-left: 2em;
 			}
 
 			#footer > .inner .copyright {
