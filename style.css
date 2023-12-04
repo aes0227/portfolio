@@ -178,6 +178,10 @@ input, select, textarea {
 	background-color: #fffdcb;
 }
 
+.filter-item.active {
+	background-color: #fffdcb
+}
+
 /* Next Project Nav */
 
 .next_project {

@@ -33,6 +33,7 @@
 		return b.join('');
 
 	};
+	
 
 	/**
 	 * Panel-ify an element.
@@ -323,45 +324,38 @@
 		// Vars.
 			var $this = $(this);
 
-		// Text, TextArea.
-			$this.find('input[type=text],textarea')
-				.each(function() {
+				// Text, TextArea.
+		$this.find('input[type=text],textarea')
+		.each(function() {
+		var i = $(this);
 
-					var i = $(this);
+		if (i.val() == '' || i.val() == i.attr('placeholder')) {
+			i.addClass('polyfill-placeholder').val(i.attr('placeholder'));
+		}
+		})
+		.on('blur', function() {
+		var i = $(this);
 
-					if (i.val() == ''
-					||  i.val() == i.attr('placeholder'))
-						i
-							.addClass('polyfill-placeholder')
-							.val(i.attr('placeholder'));
+		if (i.attr('name').match(/-polyfill-field$/)) {
+			return;
+		}
 
-				})
-				//.on('blur', function() {
+		if (i.val() == '') {
+			i.addClass('polyfill-placeholder').val(i.attr('placeholder'));
+		}
+		})
+		.on('focus', function() {
+		var i = $(this);
 
-					var i = $(this);
+		if (i.attr('name').match(/-polyfill-field$/)) {
+			return;
+		}
 
-					if (i.attr('name').match(/-polyfill-field$/))
-						return;
+		if (i.val() == i.attr('placeholder')) {
+			i.removeClass('polyfill-placeholder').val('');
+		}
+		});
 
-					if (i.val() == '')
-						i
-							.addClass('polyfill-placeholder')
-							.val(i.attr('placeholder'));
-
-				})
-				.on('focus', function() {
-
-					var i = $(this);
-
-					if (i.attr('name').match(/-polyfill-field$/))
-						return;
-
-					if (i.val() == i.attr('placeholder'))
-						i
-							.removeClass('polyfill-placeholder')
-							.val('');
-
-				});
 
 		// Password.
 			$this.find('input[type=password]')

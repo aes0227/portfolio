@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
 	<script src="script/script.js"></script>
 
+	
+
     <nav class="navbar sticky-top bg-body-tertiary">
     	<div class="container-fluid">
 		<a class='navbar-brand' href="index.html" class="logo">
@@ -64,10 +66,7 @@
 							<a class="nav-link" href="#all">All</a>
 						</li>
 						<li class="filter-item">
-							<a class="nav-link" href="#marketing">Content Strategy</a>
-						</li>
-						<li class="filter-item">
-							<a class="nav-link" href="#marketing2">Social Media Management</a>
+							<a class="nav-link" href="#marketing">Marketing</a>
 						</li>
 						<li class="filter-item">
 							<a class="nav-link" href="#photo">Photography</a>
@@ -82,11 +81,12 @@
 			</section>
 
 			<section class="tiles">
-					<article class="style1">
+					
+					<article class="style1" data-category="photo">
 						<span class="image">
 							<img src="images/mental.jpg" alt="" />
 						</span>
-						<a href="birdphotoshoot.html" id="photo">
+						<a href="birdphotoshoot.html">
 						<div class="content">
 							<h3>Photographing Mental Health</h3>
 							<p>Navigating the Self Through Abstract Symbolism of Birds.</p>
@@ -94,11 +94,11 @@
 						</div>
 						</a>
 					</article>
-					<article class="style2">
+					<article class="style1" data-category="marketing">
 						<span class="image">
 							<img src="images/wish.jpg" alt="" />
 						</span>
-						<a href="wish.html" id="marketing photo">
+						<a href="wish.html">
 							<div class="content">
 								<h3>Things I Wish I Said Out Loud</h3>
 								<p> Crafting memorable moments as Marketing Director for an original student play.</p>
@@ -110,11 +110,11 @@
 							</div>
 						</a>
 						</article>
-						<article class="style3">
+						<article class="style1" data-category="uxui">
 							<span class="image">
 								<img src="images/ev.jpg" alt="" />
 							</span>
-							<a href="ev.html" id="uxui">
+							<a href="ev.html">
 								<div class="content">
 									<h3>EV Charging Integration for SpotHero</h3>
 									<p>Using user-centric design to find innovative charging solutions for EV Drivers.</p>
@@ -122,11 +122,11 @@
 								</div>
 						</a>
 						</article>
-						<article class="style4">
+						<article class="style1" data-category="photo">
 							<span class="image">
 								<img src="images/window.jpg" alt="" />
 							</span>
-							<a href="bwphoto.html" id="photo">
+							<a href="bwphoto.html">
 								<div class="content">
 									<h3>Expecting the Unexpected</h3>
 									<p>Learning the ins and outs of Black and white film photography.</p>
@@ -135,11 +135,11 @@
 						</a>
 						</article>
 					
-						<article class="style5">
+						<article class="style1" data-category="marketing graphic">
 							<span class="image">
 								<img src="images/formal.jpg" alt="" />
 							</span>
-							<a href="formal.html" id="marketing graphic">
+							<a href="formal.html">
 								<div class="content">
 									<h3>Residential College Board</h3>
 									<p>The Marketing Process of the Annual Formal, Fall 2023.</p>
@@ -150,11 +150,11 @@
 						</a>
 						</article>
 
-						<article class="style6">
+						<article class="style1" data-category="photo">
 							<span class="image">
 								<img src="images/music.jpg" alt="" />
 									</span>
-									<a href="concertphoto.html" id="photo">
+									<a href="concertphoto.html">
 										<div class="content">
 											<h3>Concerts@Bienen</h3>
 											<p>Imagine the music playing through the photographs.</p>
@@ -163,11 +163,11 @@
 									</a>
 								</article>
 					
-								<article class="style2">
+								<article class="style1" data-category="graphic">
 									<span class="image">
 										<img src="images/swing.jpg" alt="" />
 									</span>
-									<a href="concertposter.html" id="graphic">
+									<a href="concertposter.html">
 										<div class="content">
 											<h3>Concerts@Bienen Graphic Design</h3>
 											<p>Driving the designs from the repertoire.</p>
@@ -176,11 +176,11 @@
 									</a>
 								</article>
 			
-								<article class="style5">
+								<article class="style1" data-category="photo">
 									<span class="image">
 										<img src="images/award.jpg" alt="" />
 									</span>
-									<a href="awards.html" id="photo">
+									<a href="awards.html">
 										<div class="content">
 											<h3>Awards and Recongition</h3>
 											<p>View my select art works that have garnered attention.</p>
@@ -188,12 +188,12 @@
 										</div>
 									</a>
 								</article>
-				
-								<article class="style6">
+				 
+								<article class="style1" data-category="photo">
 									<span class="image">
 										<img src="images/stitch.jpg" alt="" />
 									</span>
-									<a href="stitch.html" id="photo">
+									<a href="stitch.html">
 										<div class="content">
 											<h3>Fashion Magazine Photography | STITCH</h3>
 											<p>Why stick to a photo formula, when each and everyone is unique.</p>
@@ -202,11 +202,11 @@
 									</a>
 								</article>
 				
-								<article class="style4" style="visibility: hidden;">
+								<article class="style1" style="visibility: hidden;" data-category="photo">
 									<span class="image">
 										<img src="images/travel.jpg" alt="" />
 									</span>
-									<a href="travel.html" id="photo">
+									<a href="travel.html">
 										<div class="content">
 											<h3>Travel Photography</h3>
 											<p>Sharing the places I've been with you through unqiue perspectives.</p>
@@ -242,6 +242,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/filter.js"></script>
+
 
 	
 </html>
