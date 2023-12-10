@@ -92,7 +92,6 @@ input, select, textarea {
 	display: flex;
 }
 
-.collapse navbar-collapse {}
 
 .accordion-header {
 	font-size: 2em;
@@ -265,6 +264,7 @@ input, select, textarea {
 
 			h1 {
 				font-size: 2em;
+				padding-top: 1em;
 			}
 
 		}
