@@ -125,7 +125,7 @@ input, select, textarea {
 .bgimage {
     height:100vh;
     background: url('images/home_image.png');
-    background-size:cover;
+    background-size: cover;
     position:relative;
     opacity: 100%;
 	margin-top: inherit;
